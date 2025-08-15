@@ -10,30 +10,37 @@
     
     <header>
         <h1>Rock, Paper, Scissors Battle</h1>
-        <button id="reset">Reset</button>
+        <p id="result">           </p>
+        <button id="reset" onclick="reset()">Reset</button>
         <div id="score">
-            <p id="p1s">-</p>
-            <p id="p2s">-</p>
+            <p id="pl1s">0</p>
+            <p id="pl2s">0</p>
         </div>
         
     </header>
     <div id="game"> 
         <div class="player">
             <h2>Player 1</h2>
+            <div class="hand">
+                <img id="p1-hand" src="images/rock.png" class="hand idle">
+            </div>
             <div class="buttons">
-                <button id="rock1">Rock</button>
-                <button id="paper1">Paper</button>
-                <button id="scissors3">Scissors</button>
+                <button id="rock1" onclick="sendValue(1, 'Player 1')">Rock</button>
+                <button id="paper1" onclick="sendValue(2, 'Player 1')">Paper</button>
+                <button id="scissors1" onclick="sendValue(3, 'Player 1')">Scissors</button>
             </div>
             <p id="result1"></p>
         </div>
 
         <div class="player">
             <h2>Player 2</h2>
+            <div class="hand">
+                <img id="p2-hand" src="images/rock.png" class="hand idle">
+            </div>
             <div class="buttons">
-                <button id="rock2">Rock</button>
-                <button id="paper2">Paper</button>
-                <button id="scissors2">Scissors</button>
+                <button id="rock2" onclick="sendValue(1, 'Player 2')">Rock</button>
+                <button id="paper2" onclick="sendValue(2, 'Player 2')">Paper</button>
+                <button id="scissors2" onclick="sendValue(3, 'Player 2')">Scissors</button>
             </div>
             <p id="result2"></p>
         </div>
