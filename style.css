@@ -119,3 +119,10 @@ header #score {
 #p2-hand.down {
     transform: translateY(0) scaleX(-1);
 }
+.hand {
+    width: 100%;
+}
+.hand img{
+    margin: auto;
+    width: 70%;
+}
